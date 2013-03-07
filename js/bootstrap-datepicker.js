@@ -637,7 +637,7 @@
 			this.setValue();
 			this.element.trigger({
 				type: 'changeDate',
-				date: this.date
+				date: this.getDate()
 			});
 			var element;
 			if (this.isInput) {
@@ -776,7 +776,7 @@
 			if (dateChanged){
 				this.element.trigger({
 					type: 'changeDate',
-					date: this.date
+					date: this.getDate()
 				});
 				var element;
 				if (this.isInput) {
